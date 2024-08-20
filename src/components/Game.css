@@ -1,0 +1,44 @@
+.game {
+    height: 900px;
+    width: 100%;
+    display: inline-block;
+    background-image: url(/public/Background.jpg);
+}
+
+.game-header{
+    color: #2eff0a;
+    font-size: 30px;
+    font-weight: 1000;
+    padding: 2%;
+}
+.game-board {
+    margin-top: 4%;
+    height: 300px;
+    margin-left: -8%;
+    width: 100%;
+}
+
+.game-info {
+    height: 400px;
+    width: 35%;
+    margin-left: 63%;
+    margin-top: -20%;
+    color: #2eff0a;
+}
+
+.jump-button {
+    border: 1px solid white;
+    border-radius: 15%;
+    color: #2eff0a;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 2%;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 900;
+  }
+
+.jump-button:hover {
+    background: rgb(140, 33, 33);
+}

@@ -1,0 +1,17 @@
+
+.board-row:after {
+    clear: both;
+    content: '';
+    display: table;
+    align-items: center;
+}
+
+.board-row {
+    margin-left: 37%;
+}
+.board-status {
+    color: #2eff0a;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
