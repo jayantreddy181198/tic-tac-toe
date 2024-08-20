@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Tic-Tac-Toe Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple implementation of the classic Tic-Tac-Toe game using React. The game allows two players to take turns marking spaces in a 3x3 grid. The first player to align three of their marks in a horizontal, vertical, or diagonal row wins the game.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Two-Player Game:** Two players can play the game on the same device.
+- **Game History:** Track each move and revert to any previous state.
+- **Winner Detection:** Automatically detects the winner and displays the result.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Follow these steps to set up and run the project on your local machine.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Make sure you have the following installed:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Node.js**: [Download and install Node.js](https://nodejs.org/) if you don't have it installed.
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone <your-repo-url>
+   ```
+    Note: Replace <your-repo-url> with your actual repository URL.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Navigate to the project directory:**
 
-### `npm run eject`
+   ```bash
+   cd tic-tac-toe
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Install the dependencies::**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Running the Project
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Start the development server:**
+    ```bash
+    npm start
+    ```
 
-## Learn More
+2. **Open your browser and visit:**
+    ```bash
+    http://localhost:3000
+    ```
+    Note: This will open the game in your default web browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Project Structure
 
-### Code Splitting
+- **Square Component:** Represents a single square on the Tic-Tac-Toe board.
+- **Board Component:** Represents the entire game board, managing the state of the squares and determining the winner.
+- **Game Component:** The main component that manages the overall state, including the history of moves, and handles the game's flow.
+- **calculateWinner Function:** A helper function to determine the winner based on the current state of the board.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## How to Play
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- You can customize the look and feel of the game by modifying the CSS classes in the project. The main styles are applied to the .square, .board-row, .status, and .game-info classes.
+- Modify the logic inside the calculateWinner function if you want to change the winning conditions.
